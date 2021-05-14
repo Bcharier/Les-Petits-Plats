@@ -42,7 +42,7 @@ function displaySelectedTags() {
             .querySelector('.selectedTagTemplate')
             .content.firstElementChild.cloneNode(true)
         htmlBloc.classList.add(style)
-        htmlBloc.textContent = text + ' ✖'
+        htmlBloc.innerHTML = text + ' <img src="./logo/cross.png" class="logo-cross">'
         return htmlBloc
     }
 }
