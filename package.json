@@ -1,0 +1,22 @@
+{
+  "name": "les-petits-plats",
+  "version": "1.0.0",
+  "description": "Moteur de recherche de recettes de cuisine",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bcharier/Les-Petits-Plats.git"
+  },
+  "author": "Baptiste Charier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bcharier/Les-Petits-Plats/issues"
+  },
+  "homepage": "https://github.com/Bcharier/Les-Petits-Plats#readme",
+  "devDependencies": {
+    "eslint": "^7.24.0"
+  }
+}

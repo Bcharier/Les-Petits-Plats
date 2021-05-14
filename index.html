@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Les Petits Plats" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    />
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <title>Les Petits Plats</title>
+  </head>
+  <body>
+    <header>
+      <img src="/logo/logo.png" alt="Logo du site Les Petits Plats" />
+    </header>
+    <main>
+      <div class="search-bar-container">
+        <input
+          type="text"
+          class="form-control search-bar"
+          placeholder="Rechercher un ingrédient, appareil, ustensile ou une recette"
+        />
+        <button class="submit-button" type="submit">
+          <img src="./logo/MagGlass.png" alt="Icone de recherche">
+        </button>
+      </div>
+
+      <template class="selectedTagTemplate"
+        ><button class="btn" type="button"></button
+      ></template>
+
+      <div class="tags"></div>
+
+      <template class="dropdownItemTemplate">
+        <ul class="dropdown-list">
+          <a class="dropdown-item"></a>
+        </ul>
+      </template>
+
+      <div class="filters-container">
+        <ul id="filter-buttons">
+          <li class="filter-button filter-ingredients">
+            <input
+              id="input-ingredients"
+              type="text"
+              placeholder="Ingredients"
+            />
+            <i
+              class="fas fa-chevron-down chevron-down chevron-down-ingredients"
+            ></i>
+            <i class="fas fa-chevron-up chevron-up chevron-up-ingredients"></i>
+            <div class="dropdown-menu dropdown-menu-ingredients">
+              <div class="ingredient-not-found"></div>
+              <div class="dropdown-ingredients dropdown-template"></div>
+            </div>
+          </li>
+
+          <li class="filter-button filter-devices">
+            <input id="input-devices" type="text" placeholder="Appareil" />
+            <i
+              class="fas fa-chevron-down chevron-down chevron-down-devices"
+            ></i>
+            <i class="fas fa-chevron-up chevron-up chevron-up-devices"></i>
+            <div class="dropdown-menu dropdown-menu-devices">
+              <div class="devices-not-found"></div>
+              <div class="dropdown-devices dropdown-template"></div>
+            </div>
+          </li>
+
+          <li class="filter-button filter-ustensils">
+            <input id="input-ustensils" type="text" placeholder="Ustensiles" />
+            <i
+              class="fas fa-chevron-down chevron-down chevron-down-ustensils"
+            ></i>
+            <i class="fas fa-chevron-up chevron-up chevron-up-ustensils"></i>
+            <div class="dropdown-menu dropdown-menu-ustensils">
+              <div class="ustensil-not-found"></div>
+              <div class="dropdown-ustensils dropdown-template"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <template class="recipe-template">
+        <div class="recipe-card">
+          <div class="recipe-image"></div>
+          <div class="recipe-header">
+            <h2 class="recipe-title"></h2>
+            <p class="recipe-timer"></p>
+          </div>
+          <div class="recipe-info">
+            <div class="recipe-ingredients"></div>
+            <div class="recipe-instructions"></div>
+          </div>
+        </div>
+      </template>
+
+      <section class="recipes-container"></section>
+      <p class="message-not-found"></p>
+    </main>
+  </body>
+  <script src="./JS/index.js" type="module"></script>
+</html>
